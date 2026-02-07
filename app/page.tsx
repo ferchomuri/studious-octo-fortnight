@@ -1,7 +1,5 @@
 export default function Home() {
   return (
-    <main className='flex items-center justify-center p-24'>
-      <span className='text-5xl'>Hola</span>
-    </main>
+    <h1 className="text-3xl font-bold underline text-red-500">Hello world!</h1>
   );
 }
