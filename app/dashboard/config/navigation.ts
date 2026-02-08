@@ -2,8 +2,8 @@ import { Home, BarChart3, Music, Users } from "lucide-react"
 
 export const dashboardNavigation = [
   {
-    title: "Dashboard",
-    href: "#dashboard",
+    title: "Home",
+    href: "#home",
     icon: Home,
   },
   {

@@ -12,7 +12,7 @@ import {
 import { dashboardNavigation } from "../config/navigation";
 
 export function DashboardSidebar() {
-  const [activeId, setActiveId] = useState("dashboard");
+  const [activeId, setActiveId] = useState("home");
 
   return (
     <Sidebar className="border-r border-white/10 bg-sidebar/60 backdrop-blur-xl">

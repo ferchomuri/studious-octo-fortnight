@@ -3,8 +3,8 @@ import { AnimatedSection } from "@/components/animated-section";
 export default function Page() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
-      <AnimatedSection id="dashboard" className="min-h-screen">
-        <h2 className="text-2xl font-bold mb-4">Dashboard</h2>
+      <AnimatedSection id="home" className="min-h-screen">
+        <h2 className="text-2xl font-bold mb-4">Home</h2>
       </AnimatedSection>
       <AnimatedSection id="releases" className="min-h-screen">
         <h2 className="text-2xl font-bold mb-4">Releases</h2>
