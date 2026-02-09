@@ -1,24 +1,24 @@
-import { Home, BarChart3, Music, Users } from "lucide-react"
+import { Home, BarChart3, Music, Users } from "lucide-react";
 
 export const dashboardNavigation = [
   {
     title: "Home",
-    href: "#home",
+    href: "/dashboard/home",
     icon: Home,
   },
   {
     title: "Releases",
-    href: "#releases",
+    href: "/dashboard/releases",
     icon: Music,
   },
   {
     title: "Analytics",
-    href: "#analytics",
+    href: "/dashboard/analytics",
     icon: BarChart3,
   },
   {
     title: "Fans",
-    href: "#fans",
+    href: "/dashboard/fans",
     icon: Users,
   },
-]
+];
