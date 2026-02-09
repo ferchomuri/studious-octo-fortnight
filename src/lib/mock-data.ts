@@ -9,6 +9,9 @@ import {
   UserGrowthData,
   DeviceDistributionData,
   GeoDistributionData,
+  FollowerGrowthData,
+  LocationData,
+  EngagementMetric,
 } from "./interfaces/types";
 
 export const recentReleases: MusicRelease[] = [
@@ -279,4 +282,62 @@ export const geoDistributionData: GeoDistributionData[] = [
   { country: "Germany", users: 3100 },
   { country: "Brazil", users: 2800 },
   { country: "Japan", users: 2400 },
+];
+
+export const followerGrowthData: FollowerGrowthData[] = [
+  { month: "Aug", followers: 520000 },
+  { month: "Sep", followers: 580000 },
+  { month: "Oct", followers: 650000 },
+  { month: "Nov", followers: 720000 },
+  { month: "Dec", followers: 790000 },
+  { month: "Jan", followers: 850000 },
+];
+
+export const topLocationsData: LocationData[] = [
+  {
+    city: "Los Angeles",
+    country: "USA",
+    listeners: 142000,
+    growth: 15.3,
+    lat: 34.0522,
+    long: -118.2437,
+  },
+  {
+    city: "London",
+    country: "UK",
+    listeners: 98000,
+    growth: 22.1,
+    lat: 51.5074,
+    long: -0.1278,
+  },
+  {
+    city: "Tokyo",
+    country: "Japan",
+    listeners: 87000,
+    growth: 18.5,
+    lat: 35.6762,
+    long: 139.6503,
+  },
+  {
+    city: "São Paulo",
+    country: "Brazil",
+    listeners: 76000,
+    growth: 12.8,
+    lat: -23.5505,
+    long: -46.6333,
+  },
+  {
+    city: "Berlin",
+    country: "Germany",
+    listeners: 64000,
+    growth: 9.4,
+    lat: 52.52,
+    long: 13.405,
+  },
+];
+
+export const engagementMetricsData: EngagementMetric[] = [
+  { label: "Playlist Additions", value: 34200, growth: 12.4, icon: "Music2" },
+  { label: "New Followers", value: 12300, growth: 23.1, icon: "UserPlus" },
+  { label: "Total Shares", value: 89500, growth: 18.7, icon: "Share2" },
 ];

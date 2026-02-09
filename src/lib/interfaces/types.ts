@@ -56,3 +56,24 @@ export interface GeoDistributionData {
   country: string;
   users: number;
 }
+
+export interface FollowerGrowthData {
+  month: string;
+  followers: number;
+}
+
+export interface LocationData {
+  city: string;
+  country: string;
+  listeners: number;
+  growth: number;
+  long: number;
+  lat: number;
+}
+
+export interface EngagementMetric {
+  label: string;
+  value: number;
+  growth: number;
+  icon: string; // Icon name matching Lucide icons
+}
