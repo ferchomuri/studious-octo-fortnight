@@ -39,3 +39,20 @@ export interface ReleasesPerStreams {
   title: string;
   streams: number;
 }
+
+export interface UserGrowthData {
+  date: string;
+  totalUsers: number;
+  activeUsers: number;
+}
+
+export interface DeviceDistributionData {
+  device: string;
+  count: number;
+  fill: string;
+}
+
+export interface GeoDistributionData {
+  country: string;
+  users: number;
+}

@@ -6,6 +6,9 @@ import {
   SalesAnalytics,
   SalesPerDay,
   TotalSalesData,
+  UserGrowthData,
+  DeviceDistributionData,
+  GeoDistributionData,
 } from "./interfaces/types";
 
 export const recentReleases: MusicRelease[] = [
@@ -247,4 +250,33 @@ export const releasesPerStreams: ReleasesPerStreams[] = [
   { title: "Track R", streams: 22000 },
   { title: "Track S", streams: 16000 },
   { title: "Track T", streams: 10000 },
+];
+
+export const userGrowthData: UserGrowthData[] = [
+  { date: "2024-01", totalUsers: 1000, activeUsers: 800 },
+  { date: "2024-02", totalUsers: 1500, activeUsers: 1200 },
+  { date: "2024-03", totalUsers: 2200, activeUsers: 1600 },
+  { date: "2024-04", totalUsers: 3000, activeUsers: 2100 },
+  { date: "2024-05", totalUsers: 4500, activeUsers: 3200 },
+  { date: "2024-06", totalUsers: 6000, activeUsers: 4500 },
+  { date: "2024-07", totalUsers: 8000, activeUsers: 5800 },
+  { date: "2024-08", totalUsers: 10500, activeUsers: 7500 },
+  { date: "2024-09", totalUsers: 13000, activeUsers: 9200 },
+  { date: "2024-10", totalUsers: 15500, activeUsers: 11000 },
+  { date: "2024-11", totalUsers: 18000, activeUsers: 12500 },
+  { date: "2024-12", totalUsers: 21000, activeUsers: 15000 },
+];
+
+export const deviceDistributionData: DeviceDistributionData[] = [
+  { device: "Mobile", count: 12500, fill: "var(--chart-1)" },
+  { device: "Desktop", count: 6500, fill: "var(--chart-2)" },
+  { device: "Tablet", count: 2000, fill: "var(--chart-3)" },
+];
+
+export const geoDistributionData: GeoDistributionData[] = [
+  { country: "USA", users: 8500 },
+  { country: "UK", users: 4200 },
+  { country: "Germany", users: 3100 },
+  { country: "Brazil", users: 2800 },
+  { country: "Japan", users: 2400 },
 ];
