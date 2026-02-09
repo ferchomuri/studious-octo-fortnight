@@ -30,13 +30,13 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <SidebarProvider className="md:[--sidebar-width:13rem] lg:[--sidebar-width:16rem]">
-          <div className="flex min-h-screen w-full">
+          <div className="flex h-screen w-full overflow-hidden">
             <DashboardSidebar />
-            <main className="flex-1 flex flex-col min-w-0 bg-background text-foreground">
+            <main className="flex-1 flex flex-col min-w-0 bg-background text-foreground overflow-y-auto">
               <div className="p-4 md:hidden sticky top-0 z-50 bg-background/80 backdrop-blur-sm">
                 <SidebarTrigger className="text-foreground" />
               </div>
-              <div className="p-4 md:p-10 lg:p-20">{children}</div>
+              {children}
             </main>
           </div>
         </SidebarProvider>
