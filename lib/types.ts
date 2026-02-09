@@ -15,3 +15,10 @@ export interface FanEngagement {
   label: string
   value: number
 }
+
+export interface HomeData {
+  totalStreams: number
+  monthlyListeners: number
+  totalRevenue: number
+  engagementRate: number
+}

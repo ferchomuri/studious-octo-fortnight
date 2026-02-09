@@ -1,4 +1,4 @@
-import { FanEngagement, MusicRelease, SalesAnalytics } from "./types"
+import { FanEngagement, HomeData, MusicRelease, SalesAnalytics } from "./types"
 
 export const recentReleases: MusicRelease[] = [
   {
@@ -82,3 +82,10 @@ export const fanEngagement: FanEngagement[] = [
   { label: "Playlist Adds", value: 1850 },
   { label: "Shares", value: 420 },
 ]
+
+export const homeData: HomeData = {
+  totalStreams: 1240000,
+  monthlyListeners: 450000,
+  totalRevenue: 48230,
+  engagementRate: 5.8,
+}
