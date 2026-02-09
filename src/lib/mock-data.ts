@@ -2,7 +2,10 @@ import {
   FanEngagement,
   HomeData,
   MusicRelease,
+  ReleasesPerStreams,
   SalesAnalytics,
+  SalesPerDay,
+  TotalSalesData,
 } from "./interfaces/types";
 
 export const recentReleases: MusicRelease[] = [
@@ -102,3 +105,66 @@ export const homeData: HomeData = {
   totalRevenue: 48230,
   engagementRate: 5.8,
 };
+
+export const totalSalesData: TotalSalesData = {
+  label: "Total Sales",
+  value: 12450,
+  goal: 20000,
+};
+
+export const salesPerDay: SalesPerDay[] = [
+  { date: "2025-01-01", sales: 450 },
+  { date: "2025-01-02", sales: 520 },
+  { date: "2025-01-03", sales: 480 },
+  { date: "2025-01-04", sales: 610 },
+  { date: "2025-01-05", sales: 590 },
+  { date: "2025-01-06", sales: 720 },
+  { date: "2025-01-07", sales: 680 },
+  { date: "2025-01-08", sales: 750 },
+  { date: "2025-01-09", sales: 810 },
+  { date: "2025-01-10", sales: 790 },
+  { date: "2025-01-11", sales: 850 },
+  { date: "2025-01-12", sales: 920 },
+  { date: "2025-01-13", sales: 1000 },
+  { date: "2025-01-14", sales: 1050 },
+  { date: "2025-01-15", sales: 1120 },
+  { date: "2025-01-16", sales: 1080 },
+  { date: "2025-01-17", sales: 1150 },
+  { date: "2025-01-18", sales: 1220 },
+  { date: "2025-01-19", sales: 1180 },
+  { date: "2025-01-20", sales: 1250 },
+  { date: "2025-01-21", sales: 1320 },
+  { date: "2025-01-22", sales: 1280 },
+  { date: "2025-01-23", sales: 1350 },
+  { date: "2025-01-24", sales: 1420 },
+  { date: "2025-01-25", sales: 1380 },
+  { date: "2025-01-26", sales: 1450 },
+  { date: "2025-01-27", sales: 1520 },
+  { date: "2025-01-28", sales: 1480 },
+  { date: "2025-01-29", sales: 1550 },
+  { date: "2025-01-30", sales: 1620 },
+  { date: "2025-01-31", sales: 1580 },
+];
+
+export const releasesPerStreams: ReleasesPerStreams[] = [
+  { title: "Track A", streams: 150000 },
+  { title: "Track B", streams: 132000 },
+  { title: "Track C", streams: 115000 },
+  { title: "Track D", streams: 108000 },
+  { title: "Track E", streams: 102000 },
+  { title: "Track F", streams: 95000 },
+  { title: "Track G", streams: 88000 },
+  { title: "Track H", streams: 82000 },
+  { title: "Track I", streams: 76000 },
+  { title: "Track J", streams: 70000 },
+  { title: "Track K", streams: 64000 },
+  { title: "Track L", streams: 58000 },
+  { title: "Track M", streams: 52000 },
+  { title: "Track N", streams: 46000 },
+  { title: "Track O", streams: 40000 },
+  { title: "Track P", streams: 34000 },
+  { title: "Track Q", streams: 28000 },
+  { title: "Track R", streams: 22000 },
+  { title: "Track S", streams: 16000 },
+  { title: "Track T", streams: 10000 },
+];
