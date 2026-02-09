@@ -4,6 +4,7 @@ export interface MusicRelease {
   coverImageUrl: string;
   releaseDate: string;
   type: "single" | "ep" | "album";
+  streams: number;
 }
 
 export interface SalesAnalytics {
