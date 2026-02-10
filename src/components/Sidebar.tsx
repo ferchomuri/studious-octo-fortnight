@@ -42,6 +42,7 @@ export function DashboardSidebar() {
                     className="flex items-center gap-3 py-1"
                   >
                     <item.icon
+                      aria-hidden="true"
                       className={`h-5 w-5 ${isActive ? "text-accent drop-shadow-[0_0_5px_rgba(0,255,255,0.5)]" : ""}`}
                     />
                     <span>{item.title}</span>

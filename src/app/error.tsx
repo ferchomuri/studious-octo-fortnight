@@ -21,7 +21,10 @@ export default function Error({
     <div className="flex h-[calc(100vh-4rem)] flex-col items-center justify-center gap-6 text-center animate-in fade-in zoom-in duration-500">
       <div className="flex flex-col items-center gap-2">
         <div className="rounded-full bg-destructive/10 p-4">
-          <AlertTriangle className="h-12 w-12 text-destructive drop-shadow-[0_0_15px_rgba(255,50,50,0.4)]" />
+          <AlertTriangle
+            className="h-12 w-12 text-destructive drop-shadow-[0_0_15px_rgba(255,50,50,0.4)]"
+            aria-hidden="true"
+          />
         </div>
         <h1 className="text-4xl font-bold tracking-tighter text-foreground mt-4">
           Something went wrong!
@@ -33,12 +36,12 @@ export default function Error({
 
       <div className="flex gap-4">
         <Button onClick={() => reset()} variant="default" className="gap-2">
-          <RotateCw className="h-4 w-4" />
+          <RotateCw className="h-4 w-4" aria-hidden="true" />
           Try again
         </Button>
         <Button asChild variant="outline" className="gap-2">
           <Link href="/">
-            <Home className="h-4 w-4" />
+            <Home className="h-4 w-4" aria-hidden="true" />
             Go Home
           </Link>
         </Button>

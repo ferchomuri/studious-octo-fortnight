@@ -6,7 +6,10 @@ export default function NotFound() {
   return (
     <div className="flex h-[calc(100vh-4rem)] flex-col items-center justify-center gap-6 text-center animate-in fade-in zoom-in duration-500">
       <div className="flex flex-col items-center gap-2">
-        <FileQuestion className="h-24 w-24 text-muted-foreground/50" />
+        <FileQuestion
+          className="h-24 w-24 text-muted-foreground/50"
+          aria-hidden="true"
+        />
         <h1 className="text-8xl font-bold tracking-tighter text-primary drop-shadow-[0_0_25px_rgba(180,90,250,0.4)]">
           404
         </h1>
@@ -20,7 +23,7 @@ export default function NotFound() {
       </p>
       <Button asChild className="gap-2" size="lg">
         <Link href="/">
-          <Home className="h-4 w-4" />
+          <Home className="h-4 w-4" aria-hidden="true" />
           Return Home
         </Link>
       </Button>
