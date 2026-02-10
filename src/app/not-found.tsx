@@ -15,8 +15,8 @@ export default function NotFound() {
         </h2>
       </div>
       <p className="max-w-[500px] text-muted-foreground">
-        Oops! The page you're looking for doesn't exist or has been moved. It
-        looks like you've ventured into uncharted territory.
+        Oops! The page you&apos;re looking for doesn&apos;t exist or has been
+        moved. It looks like you&apos;ve ventured into uncharted territory.
       </p>
       <Button asChild className="gap-2" size="lg">
         <Link href="/">

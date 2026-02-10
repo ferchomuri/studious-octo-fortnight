@@ -7,7 +7,7 @@ interface LoadingSpinnerProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export function LoadingSpinner({
   className,
-  size = 40, // Increased default size for better visibility
+  size = 40,
   ...props
 }: LoadingSpinnerProps) {
   return (
