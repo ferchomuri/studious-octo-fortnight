@@ -4,18 +4,18 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { dashboardNavigation } from "../lib/interfaces/navigation";
 
-import { useIsMobile } from "@/src/hooks/use-mobile";
 import {
   Sidebar,
   SidebarContent,
   SidebarMenu,
   SidebarMenuItem,
   SidebarMenuButton,
+  useSidebar,
 } from "./ui/sidebar";
 
 export function DashboardSidebar() {
   const pathname = usePathname();
-  const isMobile = useIsMobile();
+  const { isMobile, setOpenMobile } = useSidebar();
 
   return (
     <Sidebar
@@ -31,6 +31,7 @@ export function DashboardSidebar() {
                 <SidebarMenuButton
                   asChild
                   isActive={isActive}
+                  onClick={() => isMobile && setOpenMobile(false)}
                   className={`
                     transition-all duration-300 hover:bg-white/5 hover:text-primary text-lg
                     ${isActive ? "bg-white/10 text-primary shadow-[0_0_15px_rgba(180,90,250,0.3)] font-semibold" : "text-sidebar-foreground"}
